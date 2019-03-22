@@ -7,7 +7,7 @@ const client = new Discord.Client();
 var PREFIX = "/";
 
 bot.on("ready", function() {
-    bot.user.setGame("V1.1, .help");
+    bot.user.setGame("V0.4, /modhelp");
 });
 
 bot.on("message", async function(message) {
