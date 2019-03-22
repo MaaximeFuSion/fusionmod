@@ -7,7 +7,7 @@ const client = new Discord.Client();
 var PREFIX = "/";
 
 bot.on("ready", function() {
-    bot.user.setGame("V0.4, /modhelp");
+    bot.user.setGame("Dev in loading...");
 });
 
 bot.on("message", async function(message) {
@@ -49,7 +49,7 @@ bot.on("message", async function(message) {
             embed: {
                 color: 0xFF0000,
                 author: message.author.username,
-                title: '/modhelp',
+                title: 'modhelp',
                 description: 'Commande non disponible',
                 fields: [{
                     name: "Accès refusé",
@@ -61,6 +61,5 @@ bot.on("message", async function(message) {
         break;
     }
 });
-
 
 bot.login(process.env.TOKEN);
